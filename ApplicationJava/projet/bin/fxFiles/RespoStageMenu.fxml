@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxFiles.RespoStageMenuController">
+   <children>
+      <ImageView fitHeight="663.0" fitWidth="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/MenuRespStageBackground.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="62.0" layoutY="124.0" prefHeight="366.0" prefWidth="328.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#propStage" prefHeight="74.0" prefWidth="328.0" style="-fx-background-color: #DAA520; -fx-background-radius: 10 10 0 0; -fx-border-width: 0 0 2 0; -fx-border-color: white;" text="Propositions des Stages" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#validCandid" prefHeight="73.0" prefWidth="328.0" style="-fx-background-color: #DAA520; -fx-border-width: 0 0 2 0; -fx-border-color: white; -fx-background-radius: 10 10 0 0;" text="Validation des Candidats" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#evalStagiaire" prefHeight="80.0" prefWidth="328.0" style="-fx-background-color: #DAA520; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-background-radius: 10 10 0 0;" text="Evaluation des Stagiaires" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#déconnexion" prefHeight="72.0" prefWidth="328.0" style="-fx-background-color: #DAA520; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-background-radius: 10 10 0 0;" text="Déconnexion" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="362.0" layoutY="595.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" text="Fermer" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

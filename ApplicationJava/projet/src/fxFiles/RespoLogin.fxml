@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxFiles.RespoLoginController">
+   <children>
+      <ImageView fitHeight="573.0" fitWidth="829.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/27230.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="224.0" prefHeight="553.0" prefWidth="403.0">
+         <children>
+            <PasswordField fx:id="passwordCandidat" layoutX="129.0" layoutY="313.0" promptText="Password" style="-fx-background-color: white; -fx-background-radius: 10 10 0 0; -fx-border-color: #daa520; -fx-border-width: 0 0 2 0;" />
+            <TextField fx:id="userNameCandidat" layoutX="129.0" layoutY="259.0" promptText="User Name" style="-fx-background-color: white; -fx-background-radius: 10 10 0 0; -fx-border-width: 0 0 2 0; -fx-border-color: #daa520;" />
+            <Button layoutX="116.0" layoutY="381.0" mnemonicParsing="false" onAction="#seConnecter" prefHeight="36.0" prefWidth="172.0" style="-fx-background-color: #daa520; -fx-background-radius: 10 10 0 0;" text="Se Connecter" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="86.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/output-onlinepngtools.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="38.0" layoutX="85.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/passwordGold.png" />
+               </image>
+            </ImageView>
+            <Text fill="GOLDENROD" layoutX="118.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace Responsable">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="777.0" layoutY="514.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" text="Exit" textFill="GOLDENROD" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
